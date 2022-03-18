@@ -1,0 +1,422 @@
+    *{
+  padding: 0%;
+  margin: 0%;  
+  text-decoration: none;
+  list-style: none;
+ 
+
+}
+html {
+    scroll-behavior: smooth; 
+}   
+/*WHATSAPP*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:100%;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+     
+}
+.float:hover {
+	
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/*HEADER*/
+header{
+ width: 100%;
+box-shadow: 0 0  20px 0    rgb(245, 245, 245);
+overflow: hidden;
+position: fixed;
+top: 0%;
+
+}
+/*MENU*/
+.nava{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+
+}
+.logo{
+   font-size: 30px;
+   cursor: pointer; 
+}
+.logo a{
+    color: black;
+}
+.logo:hover{
+    opacity:0.3;
+    transition:500ms;
+}
+.menu{
+  display: flex;
+
+}
+.car{
+cursor: pointer;
+margin: 0  0 0 40px;
+width:30px;
+}
+.contador{
+    color:red;
+
+}
+.hamburguesa{
+    display: none;
+  
+}
+.hamburguesa:hover{
+    transition:1s;
+    color: #1FDE82;
+}
+.fas{
+    font-size:30px;
+}
+.menu a{
+font-size:20px;
+font-weight: 200;
+text-decoration: none;
+margin: 0 0 0 70px;
+color: black;
+}
+.menu a:hover{
+   color: #1FDE82;
+   transition:500ms;
+}
+.linea::after{
+    content: '';
+    display:block;
+    width: 0;
+    height:2px;
+    background: #1FDE82;
+} 
+.linea:hover::after{
+    width:100%;
+    transition:width 1s;
+}
+/*TABLA */
+.table{
+    width: 100%;
+margin: auto;
+}
+th{
+    font-size: 21px;
+    color: black;
+    padding: 0 30px 0 0;
+}
+.tables td{
+    text-align: center;
+    font-size: 21px;
+    padding: 10px 30px 0 0;
+}
+ .vaciar input{
+width: 50%;
+height:40px;
+font-size:20px;
+margin-left:30%;
+cursor: pointer;
+background: #dc3545;
+outline: none;
+border: 1px black solid;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 200;
+
+}
+tbody img{
+  
+    border-radius:20px ;
+    width:130px;
+    height:130px;
+}
+
+/*SECTION FONDO DEL DIV COMPRAS*/
+.fondo{
+    display: none;
+    position:fixed;
+    width:100%;
+    height:100vh;
+    top: 0%;
+    background: rgba(0, 0, 0, 0.363);
+    animation: anima2 2s;
+}
+.compras{   
+  width:30%;
+  height:100vh;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  float: right;
+ z-index: 100;
+ overflow-y: scroll;
+}
+
+.cerrar h1{
+    cursor: pointer;
+    margin:20px 30px 0 0 ;
+    font-size:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+}
+/*Section principal*/
+.fondo_imagen{
+    width:100%;
+    height: 100vh;
+    margin-top:60px;
+    background-image: url("../img/box.jpg");
+    background-size: cover;
+    background-position:center;
+}
+.fondo_imagenh1{
+    width: 50%;
+}
+.fondo_imagen h1{
+    display: table-cell;
+    vertical-align:middle;
+    height: 100vh;
+    color: rgba(25, 238, 89, 0.719);
+    font-size:60px;
+}
+/*DESCUENTO*/
+.porciento{
+    width:100%;
+    height:100vh;
+    top: 0%;
+    display: none;
+    background:rgba(0, 0, 0, 0.541);
+    position: fixed;
+}
+.porciento_visible{
+    display: block;
+    animation: anima3 1s; 
+}
+.descuentos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     width:70%;
+     height:80vh;
+     background: white;
+     margin:80px auto auto auto ;
+}
+.descuento_Cerrar{
+    display: block;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    position:absolute;
+    top:13%;
+    left:83%;
+    cursor: pointer;
+}
+.descuentos p{
+    width: 30%;
+font-size: 30px;
+}
+.descuentos img{
+    width:360px;
+    height:360px;
+    animation: anima3 3s;
+}
+.descuentos input{
+    width:100%;
+    height: 40px;
+    text-align: center;
+    display: block;
+    margin: 10px 0 20px 0;
+    outline: none;
+}
+.validar{
+    width:100%;
+    height: 40px;
+    border-radius:5px;
+    background: rgb(255, 255, 255);
+    border: 1px black solid;
+   cursor: pointer;
+}
+.validar:hover{
+    background: #1FDE82;
+    transition: 2s ease-in-out;
+}
+.diez{
+    color:red;
+}
+/*MAQUINA DE ESCRIBIR*/
+.typeds{
+    font-style: normal;
+    color: white;
+}
+/*CLASE AGREGADA EN JS*/
+.fondo2{
+    animation: anima 1s;
+    display: block;
+}
+
+/*PRODUCTOS*/
+.productos{
+    width:100%;
+
+}
+.productos_cards{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+.cards{
+    width:23%;
+    border:1px black solid;
+    border-radius:10px 10px 3px 3px ;
+    margin: 20px ;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.cards:hover{
+    box-shadow: 0  0 12px   0;
+}
+.cards img{
+    width:100%;
+    border-radius:10px;
+}
+
+.cards p{
+    font-family: "Roboto", sans-serif;
+    margin:10px 0 10px 0;
+    text-align: center;
+}
+.cards h5{
+    font-family: "Roboto", sans-serif;
+    margin:0 0 10px 0;
+    text-align: center;
+}
+.cards button{
+width: 50%;
+height:40px;
+border: 0;
+margin-left:60px;
+cursor: pointer;
+border-radius:5px;
+background: rgba(255, 0, 0, 0.425);
+}
+/*ANIMACIONES*/
+ @keyframes anima{
+   0%{transform: translateX(100%);}
+  100%{transform: translateX(1);}
+}
+ @keyframes anima2{
+    0%{transform: translateX(1);}
+  100%{transform: translateX(100%);}
+}
+@keyframes anima3{
+    0%{transform: scale(0);}
+  100%{transform: scale(1);}
+}
+
+
+/*RESPONSIVE*/
+@media(max-width:600px) {
+    .menu{
+        display:none;
+    }
+.nava{
+    width:100%;
+    display:block;
+}
+.logo{
+    margin-top: -16px;
+    width: 10px;
+}
+.menu a{
+     font-size: 25px;
+    display: block;
+    margin: 20px 0 30px 0px;
+
+}
+.actives{
+    height: 100vh;
+    display:block;
+}
+.car{
+    position: absolute;
+    top:0%;
+    left:60%;
+}
+.hamburguesa{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top:0%;
+    align-items: flex-start;
+    left: 88%;
+}
+.compras{
+    width: 100%;
+}
+.fondo_imagen{
+ margin-top: 10px;
+}
+.fondo_imagen{
+    background-image: url("../img/sombra.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.descuentos{
+    width: 100%;
+}
+.descuentos p{
+    width:80%;
+}
+.descuentos img{
+    display: none;
+}
+.fondo_imagenh1 h1{
+    font-size:30px;
+}
+.productos_cards{
+    width: 100%;
+}
+.cards{
+    width:80%;
+}
+.cards button{
+margin-left: 80px;
+}
+} 
+
+
+
+
+
+@media(max-width:900px) {
+    .descuento_Cerrar{
+        top:17%;
+       left:90%;
+  
+    }
+  
+}
